@@ -25,6 +25,7 @@ plugins {
     id "org.sonarqube"
     id "io.spring.nohttp"
     //jhipster-needle-gradle-plugins - JHipster will add additional gradle plugins here
+    id 'com.github.kt3k.coveralls' version '2.8.4'
 }
 
 group = "fr.epsi.mspr.ci"
@@ -116,6 +117,10 @@ task testReport(type: TestReport) {
 task integrationTestReport(type: TestReport) {
     destinationDir = file("$buildDir/reports/tests")
     reportOn integrationTest
+}
+
+coveralls {
+    jacocoReportPath "$buildDir/reports/jacoco/test/jacocoTestReport.xml"
 }
 
 if (!project.hasProperty("runList")) {
