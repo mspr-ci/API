@@ -32,6 +32,4 @@ processResources {
     }
 }
 
-test.dependsOn webpack_test
-processResources.dependsOn webpack
 bootJar.dependsOn processResources
