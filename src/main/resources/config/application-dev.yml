@@ -16,7 +16,7 @@
 logging:
   level:
     ROOT: DEBUG
-    io.github.jhipster: DEBUG
+    io.github.jhips.hibernate:hibernate-ter: DEBUG
     fr.epsi.mspr.ci: DEBUG
 
 spring:
@@ -37,9 +37,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: ${JDBC_DATABASE_URL}
-    username: ${JDBC_DATABASE_USERNAME}
-    password: ${JDBC_DATABASE_PASSWORD}
+    url: jdbc:postgresql://ec2-46-137-84-140.eu-west-1.compute.amazonaws.com:5432/d8i5uif9v5qfu1?user=elngsqeetslskd&password=cd18c97a5994d8e04e22cbf1eb918d675b69c00300a64486fa93ce9220cb907c&sslmode=require
+    username: elngsqeetslskd
+    password: cd18c97a5994d8e04e22cbf1eb918d675b69c00300a64486fa93ce9220cb907c
     hikari:
       poolName: Hikari
       auto-commit: false
