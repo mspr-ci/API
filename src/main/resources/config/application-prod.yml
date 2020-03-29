@@ -15,9 +15,9 @@
 
 logging:
   level:
-    ROOT: INFO
-    io.github.jhipster: INFO
-    fr.epsi.mspr.ci: INFO
+    ROOT: DEBUG
+    io.github.jhips.hibernate:hibernate-ter: DEBUG
+    fr.epsi.mspr.ci: DEBUG
 
 management:
   metrics:
