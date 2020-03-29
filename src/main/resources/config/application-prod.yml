@@ -58,10 +58,10 @@ spring:
   liquibase:
     contexts: prod
   mail:
-    host: localhost
+    host: in-v3.mailjet.com
     port: 25
-    username:
-    password:
+    username: 4d358991daa19ffd0c0d4aa8dd9e5f39
+    password: f5c9fe6cb7d797e902b47a98cf4c39f0
   thymeleaf:
     cache: true
 
