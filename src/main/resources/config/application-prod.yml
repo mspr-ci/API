@@ -22,7 +22,7 @@ logging:
 management:
   metrics:
     export:
-      prometheus:.hibernate:hibernate-
+      prometheus:
         enabled: false
 
 spring:
